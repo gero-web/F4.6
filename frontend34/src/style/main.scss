@@ -1,0 +1,162 @@
+$myColor: rgba(0, 0, 0, 0.767);
+
+
+body{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: larger;
+  background-color: rgba(153, 155, 156, 0.26);
+}
+
+ul {
+  background-color: $myColor;
+  margin: 0; 
+  padding-left: 0; 
+
+  li { 
+    list-style-type: none;
+    
+  }
+  
+  a {
+    color: aliceblue;
+    :link {
+      color: none;
+    }
+    :active{
+      color: none;
+    }
+
+    text-decoration: none;
+  }
+
+}
+
+
+.container{
+ 
+  margin: 1vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: stretch;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.mainImage{
+  width: 40vw;
+  height: 50vh;
+  margin: 1vw;
+}
+
+.buttonLink{
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  background-color: rgba(0, 0, 0, 0.767);
+  border-radius: 5vw;
+  width: 10vw;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  align-content: stretch;
+  flex-wrap: nowrap;
+  
+  a {
+    color: aliceblue;
+    :link {
+      color: none;
+    }
+    :active{
+      color: none;
+    }
+
+    text-decoration: none;
+  }
+}
+
+.buttonLink:hover{
+  background-color: rgb(2, 53, 27);
+  width: 11vw;
+}
+
+.container__list{
+  
+  margin-bottom: 2vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  justify-content: center;
+  border: solid black;
+  border-radius: 4vw;
+}
+
+
+.container__ingredient{
+
+  margin-left: 5vw;
+  margin-right: 5vw;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: max-content();
+  margin-bottom: 5vw;
+  margin-top: 5vw;
+
+  div {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 40vw;
+   
+  }
+
+}
+
+.container__categori_list{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  border: 1px black solid;
+  padding: 2vw;
+  margin-bottom: 2vh;
+  border-radius: 5vw;
+}
+
+.container__step{
+
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+
+  div {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-direction: row;
+    align-content: stretch;
+    margin-bottom: 2vw;
+  }
+
+  p {
+    margin-top: 0;
+  }
+
+  img {
+    width: 20vw;
+    height: 20vh;
+  }
+  .step { 
+    width: 10%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+  }
+
+}
+
